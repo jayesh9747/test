@@ -1,0 +1,552 @@
+[
+    {
+      "solution": " 5f3bc15416fdc4ed008171b1",
+      "criteria_id ": "5f3b88ef16fdc4ed0081719d ",
+      "questionsetId": "do_214103529528164352117"
+    },
+    {
+      "children": [
+        "do_214103532226822144118",
+        "do_214103533537607680119",
+        "do_214103535025152000120",
+        "do_214103535775178752121",
+        "do_214103536913850368122",
+        "do_214103537295712256123",
+        "do_214103538124439552124",
+        "do_214103538390188032125"
+      ]
+    },
+    {
+      "section": {
+        "page1": {
+          "sectionId": "Page 1",
+          "questionIds": [
+            "5f3b88f36ba5e3ecd7a4221d",
+            "5f3b88f36ba5e3ecd7a4221e",
+            "5f3b88f36ba5e3ecd7a4221f",
+            "5f3b88f36ba5e3ecd7a42220",
+            "5f3b88f36ba5e3ecd7a42221",
+            "5f3b88f36ba5e3ecd7a42222",
+            "5f3b88f36ba5e3ecd7a42223",
+            "5f3b88f36ba5e3ecd7a42224"
+          ],
+          "children": [
+            "do_214103532226822144118",
+            "do_214103533537607680119",
+            "do_214103535025152000120",
+            "do_214103535775178752121",
+            "do_214103536913850368122",
+            "do_214103537295712256123",
+            "do_214103538124439552124",
+            "do_214103538390188032125"
+          ],
+          "sectionData": {
+            "code": "PS001_1597737186347",
+            "name": "Page 1",
+            "description": "General Information",
+            "mimeType": "application/vnd.sunbird.questionset",
+            "primaryCategory": "observation"
+          },
+          "type": "nonmatrix",
+          "branchingLogic": {
+            "do_214103533537607680119": {
+              "target": [
+                "do_214103535025152000120",
+                "do_214103535775178752121",
+                "do_214103536913850368122"
+              ],
+              "preCondition": {},
+              "source": []
+            },
+            "do_214103535025152000120": {
+              "target": [],
+              "preCondition": {
+                "and": [
+                  {
+                    "eq": [
+                      {
+                        "var": "do_214103533537607680119.response1.value",
+                        "type": "interactions"
+                      },
+                      [0]
+                    ]
+                  }
+                ]
+              },
+              "source": ["do_214103533537607680119"]
+            },
+            "do_214103535775178752121": {
+              "target": [],
+              "preCondition": {
+                "and": [
+                  {
+                    "eq": [
+                      {
+                        "var": "do_214103533537607680119.response1.value",
+                        "type": "interactions"
+                      },
+                      [1]
+                    ]
+                  }
+                ]
+              },
+              "source": ["do_214103533537607680119"]
+            },
+            "do_214103536913850368122": {
+              "target": [],
+              "preCondition": {
+                "and": [
+                  {
+                    "eq": [
+                      {
+                        "var": "do_214103533537607680119.response1.value",
+                        "type": "interactions"
+                      },
+                      [2]
+                    ]
+                  }
+                ]
+              },
+              "source": ["do_214103533537607680119"]
+            }
+          },
+          "allowMultipleInstances": "",
+          "instances": {},
+          "nodesModified": {
+            "do_214103532226822144118": {
+              "isNew": false,
+              "metadata": {
+                "name": "Name of Student",
+                "code": "PS01_1597737186347",
+                "mimeType": "application/vnd.sunbird.question",
+                "primaryCategory": "Text",
+                "interactionTypes": ["text"],
+                "showRemarks": "No",
+                "body": "<p>Name of Student</p><p></p>",
+                "instructions": { "default": "" },
+                "editorState": { "question": "<p>Name of Student</p><p></p>" },
+                "responseDeclaration": {
+                  "response1": {
+                    "type": "string",
+                    "maxScore": 1
+                  }
+                },
+                "interactions": {
+                  "validation": { "required": "Yes" },
+                  "response1": {
+                    "validation": { "limit": { "maxLength": "100" } },
+                    "type": { "number": "No" }
+                  }
+                },
+                "hints": "",
+                "evidence": { "mimeType": [] },
+                "visibility": "Parent"
+              },
+              "objectType": "Question",
+              "root": false
+            },
+            "do_214103533537607680119": {
+              "isNew": false,
+              "metadata": {
+                "name": "As you studied the chapter on Laws of Motion did you face a challenge in understanding",
+                "code": "PS02_1597737186347",
+                "mimeType": "application/vnd.sunbird.question",
+                "primaryCategory": "Multiselect Multiple Choice Question",
+                "interactionTypes": ["choice"],
+                "showRemarks": "Yes",
+                "body": "<div class='question-body'><div class='mcq-title'><p>As you studied the chapter on Laws of Motion did you face a challenge in understanding&nbsp</p></div><div data-choice-interaction='response1' class='mcq-vertical'></div><div class='mcq-title'><p>&nbsp</p></div><div data-choice-interaction='response1' class='mcq-vertical'></div></div>",
+                "hints": "",
+                "interactions": {
+                  "validation": { "required": "Yes" },
+                  "response1": {
+                    "type": "choice",
+                    "options": [
+                      { "value": "R1", "label": "First Law of Motion" },
+                      { "value": "R2", "label": "Second Law of Motion" },
+                      { "value": "R3", "label": "Third Law of Motion" }
+                    ]
+                  }
+                },
+                "editorState": {
+                  "question": "<div class='question-body'><div class='mcq-title'><p>As you studied the chapter on Laws of Motion did you face a challenge in understanding&nbsp</p></div><div data-choice-interaction='response1' class='mcq-vertical'></div><div class='mcq-title'><p>&nbsp</p></div><div data-choice-interaction='response1' class='mcq-vertical'></div></div>",
+                  "options": [
+                    {
+                      "answer": false,
+                      "value": {
+                        "body": "<p>First Law of Motion</p>",
+                        "value": 0
+                      }
+                    },
+                    {
+                      "answer": false,
+                      "value": {
+                        "body": "<p>Second Law of Motion</p>",
+                        "value": 1
+                      }
+                    },
+                    {
+                      "answer": false,
+                      "value": {
+                        "body": "<p>Third Law of Motion</p>",
+                        "value": 2
+                      }
+                    }
+                  ]
+                },
+                "instructions": { "default": "" },
+                "evidence": { "mimeType": [] },
+                "responseDeclaration": {
+                  "response1": {
+                    "maxScore": 1,
+                    "cardinality": "multiple",
+                    "type": "integer",
+                    "correctResponse": { "outcomes": { "SCORE": 1 } },
+                    "mapping": []
+                  }
+                },
+                "visibility": "Parent"
+              },
+              "objectType": "Question",
+              "root": false
+            },
+            "do_214103535025152000120": {
+              "isNew": false,
+              "metadata": {
+                "name": "Describe the Challenge or Doubt in First Law of Motion",
+                "code": "PS03_1597737186347",
+                "mimeType": "application/vnd.sunbird.question",
+                "primaryCategory": "Text",
+                "interactionTypes": ["text"],
+                "showRemarks": "No",
+                "body": "<p>Describe the Challenge or Doubt in First Law of Motion</p><p></p>",
+                "instructions": { "default": "" },
+                "editorState": {
+                  "question": "<p>Describe the Challenge or Doubt in First Law of Motion</p><p></p>"
+                },
+                "responseDeclaration": {
+                  "response1": {
+                    "type": "string",
+                    "maxScore": 1
+                  }
+                },
+                "interactions": {
+                  "validation": { "required": "Yes" },
+                  "response1": {
+                    "validation": { "limit": { "maxLength": "100" } },
+                    "type": { "number": "No" }
+                  }
+                },
+                "hints": "",
+                "evidence": { "mimeType": [] },
+                "visibility": "Parent"
+              },
+              "objectType": "Question",
+              "root": false
+            },
+            "do_214103535775178752121": {
+              "isNew": false,
+              "metadata": {
+                "name": "Describe the Challenge or Doubt in Second Law of Motion",
+                "code": "PS04_1597737186347",
+                "mimeType": "application/vnd.sunbird.question",
+                "primaryCategory": "Text",
+                "interactionTypes": ["text"],
+                "showRemarks": "No",
+                "body": "<p>Describe the Challenge or Doubt in Second Law of Motion</p><p></p>",
+                "instructions": { "default": "" },
+                "editorState": {
+                  "question": "<p>Describe the Challenge or Doubt in Second Law of Motion</p><p></p>"
+                },
+                "responseDeclaration": {
+                  "response1": {
+                    "type": "string",
+                    "maxScore": 1
+                  }
+                },
+                "interactions": {
+                  "validation": { "required": "Yes" },
+                  "response1": {
+                    "validation": { "limit": { "maxLength": "100" } },
+                    "type": { "number": "No" }
+                  }
+                },
+                "hints": "",
+                "evidence": { "mimeType": [] },
+                "visibility": "Parent"
+              },
+              "objectType": "Question",
+              "root": false
+            },
+            "do_214103536913850368122": {
+              "isNew": false,
+              "metadata": {
+                "name": "Describe the Challenge or Doubt in Third Law of Motion",
+                "code": "PS05_1597737186347",
+                "mimeType": "application/vnd.sunbird.question",
+                "primaryCategory": "Text",
+                "interactionTypes": ["text"],
+                "showRemarks": "No",
+                "body": "<p>Describe the Challenge or Doubt in Third Law of Motion</p><p></p>",
+                "instructions": { "default": "" },
+                "editorState": {
+                  "question": "<p>Describe the Challenge or Doubt in Third Law of Motion</p><p></p>"
+                },
+                "responseDeclaration": {
+                  "response1": {
+                    "type": "string",
+                    "maxScore": 1
+                  }
+                },
+                "interactions": {
+                  "validation": { "required": "Yes" },
+                  "response1": {
+                    "validation": { "limit": { "maxLength": "100" } },
+                    "type": { "number": "No" }
+                  }
+                },
+                "hints": "",
+                "evidence": { "mimeType": [] },
+                "visibility": "Parent"
+              },
+              "objectType": "Question",
+              "root": false
+            },
+            "do_214103537295712256123": {
+              "isNew": false,
+              "metadata": {
+                "name": "When you did the exercises in the chapter did you understand the given questions",
+                "code": "PS06_1597737186347",
+                "mimeType": "application/vnd.sunbird.question",
+                "primaryCategory": "Single Select Multiple Choice Question",
+                "interactionTypes": ["choice"],
+                "showRemarks": "No",
+                "body": "<div class='question-body'><div class='mcq-title'><p>When you did the exercises in the chapter did you understand the given questions&nbsp</p></div><div data-choice-interaction='response1' class='mcq-vertical'></div></div>",
+                "hints": "",
+                "interactions": {
+                  "validation": { "required": "Yes" },
+                  "response1": {
+                    "type": "choice",
+                    "options": [
+                      { "value": "R1", "label": "Yes" },
+                      { "value": "R2", "label": "No" }
+                    ]
+                  }
+                },
+                "editorState": {
+                  "question": "<div class='question-body'><div class='mcq-title'><p>When you did the exercises in the chapter did you understand the given questions&nbsp</p></div><div data-choice-interaction='response1' class='mcq-vertical'></div></div>",
+                  "options": [
+                    {
+                      "answer": true,
+                      "value": { "body": "<p>Yes</p>", "value": 0 }
+                    },
+                    {
+                      "answer": false,
+                      "value": { "body": "<p>No</p>", "value": 1 }
+                    }
+                  ]
+                },
+                "instructions": { "default": "" },
+                "evidence": { "mimeType": [] },
+                "responseDeclaration": {
+                  "response1": {
+                    "maxScore": 1,
+                    "cardinality": "single",
+                    "type": "integer",
+                    "correctResponse": { "outcomes": { "SCORE": 1 } },
+                    "mapping": []
+                  }
+                },
+                "visibility": "Parent"
+              },
+              "objectType": "Question",
+              "root": false
+            },
+            "do_214103538124439552124": {
+              "isNew": false,
+              "metadata": {
+                "name": "State the question and describe the issue you faced while solving the question",
+                "code": "PS07_1597737186347",
+                "mimeType": "application/vnd.sunbird.question",
+                "primaryCategory": "Text",
+                "interactionTypes": ["text"],
+                "showRemarks": "No",
+                "body": "<p>State the question and describe the issue you faced while solving the question</p><p></p>",
+                "instructions": { "default": "" },
+                "editorState": {
+                  "question": "<p>State the question and describe the issue you faced while solving the question</p><p></p>"
+                },
+                "responseDeclaration": {
+                  "response1": {
+                    "type": "string",
+                    "maxScore": 1
+                  }
+                },
+                "interactions": {
+                  "validation": { "required": "Yes" },
+                  "response1": {
+                    "validation": { "limit": { "maxLength": "100" } },
+                    "type": { "number": "No" }
+                  }
+                },
+                "hints": "",
+                "evidence": { "mimeType": [] },
+                "visibility": "Parent"
+              },
+              "objectType": "Question",
+              "root": false
+            },
+            "do_214103538390188032125": {
+              "isNew": false,
+              "metadata": {
+                "name": "In which way would you like to resolve your doubts",
+                "code": "PS08_1597737186347",
+                "mimeType": "application/vnd.sunbird.question",
+                "primaryCategory": "Multiselect Multiple Choice Question",
+                "interactionTypes": ["choice"],
+                "showRemarks": "No",
+                "body": "<div class='question-body'><div class='mcq-title'><p>In which way would you like to resolve your doubts&nbsp</p></div><div data-choice-interaction='response1' class='mcq-vertical'></div></div>",
+                "hints": "",
+                "interactions": {
+                  "validation": { "required": "Yes" },
+                  "response1": {
+                    "type": "choice",
+                    "options": [
+                      { "value": "R1", "label": "Classroom Discussion" },
+                      { "value": "R2", "label": "Personal Tutoring" },
+                      { "value": "R3", "label": "Group Study" }
+                    ]
+                  }
+                },
+                "editorState": {
+                  "question": "<div class='question-body'><div class='mcq-title'><p>In which way would you like to resolve your doubts&nbsp</p></div><div data-choice-interaction='response1' class='mcq-vertical'></div></div>",
+                  "options": [
+                    {
+                      "answer": false,
+                      "value": {
+                        "body": "<p>Classroom Discussion</p>",
+                        "value": 0
+                      }
+                    },
+                    {
+                      "answer": false,
+                      "value": { "body": "<p>Personal Tutoring</p>", "value": 1 }
+                    },
+                    {
+                      "answer": false,
+                      "value": { "body": "<p>Group Study</p>", "value": 2 }
+                    }
+                  ]
+                },
+                "instructions": { "default": "" },
+                "evidence": { "mimeType": [] },
+                "responseDeclaration": {
+                  "response1": {
+                    "maxScore": 1,
+                    "cardinality": "multiple",
+                    "type": "integer",
+                    "correctResponse": { "outcomes": { "SCORE": 1 } },
+                    "mapping": []
+                  }
+                },
+                "visibility": "Parent"
+              },
+              "objectType": "Question",
+              "root": false
+            }
+          },
+          "rules": {
+            "when": {
+              "field": {
+                "type": "integer",
+                "value": "do_214103533537607680119.response1.value"
+              },
+              "eq": { "target": 0 },
+              "then": {
+                "action": {
+                  "value": {
+                    "type": "integer",
+                    "var": "do_214103535025152000120",
+                    "target": "show"
+                  }
+                }
+              }
+            },
+            "when": {
+              "field": {
+                "type": "integer",
+                "value": "do_214103533537607680119.response1.value"
+              },
+              "eq": { "target": 1 },
+              "then": {
+                "action": {
+                  "value": {
+                    "type": "integer",
+                    "var": "do_214103535775178752121",
+                    "target": "show"
+                  }
+                }
+              }
+            },
+            "when": {
+              "field": {
+                "type": "integer",
+                "value": "do_214103533537607680119.response1.value"
+              },
+              "eq": { "target": 2 },
+              "then": {
+                "action": {
+                  "value": {
+                    "type": "integer",
+                    "var": "do_214103536913850368122",
+                    "target": "show"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "hierachydata": {
+        "request": {
+          "data": {
+            "nodesModified": {
+              "Page 1": {
+                "metadata": {
+                  "code": "PS001_1597737186347",
+                  "name": "Page 1",
+                  "description": "General Information",
+                  "mimeType": "application/vnd.sunbird.questionset",
+                  "primaryCategory": "observation"
+                },
+                "objectType": "QuestionSet",
+                "root": false,
+                "isNew": true
+              }
+            },
+            "hierarchy": {
+              "do_214103529528164352117": {
+                "children": ["Page 1"],
+                "root": true
+              },
+              "Page 1": {
+                "children": [
+                  "do_214103532226822144118",
+                  "do_214103533537607680119",
+                  "do_214103535025152000120",
+                  "do_214103535775178752121",
+                  "do_214103536913850368122",
+                  "do_214103537295712256123",
+                  "do_214103538124439552124",
+                  "do_214103538390188032125"
+                ],
+                "root": false
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+  
